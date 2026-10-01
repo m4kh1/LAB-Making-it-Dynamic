@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./style.css" rel="stylesheet">
+  <script src="./vendor/jquery.min.js"></script>
+  <script src="./script.js"></script>
+  <title>About Me</title>
+</head>
+<body>
+  <div class="reading-track" aria-hidden="true">
+    <div id="reading-progress"></div>
+  </div>
+
+  <header id="top">
+    <h1 class="header">About Me</h1>
+  </header>
+
+  <main>
+    <h2 class="name">Makhi Borders</h2>
+    <button id="theme-toggle" type="button">Use light theme</button>
+
+    <nav aria-label="Page sections">
+      <a href="#background">My Background</a>
+      <a href="#learning">Course Goals</a>
+      <a href="#future">My Future</a>
+    </nav>
+
+    <section id="background">
+      <h3>My Background &amp; Experience</h3>
+      <button class="detail-toggle" type="button">Hide details</button>
+      <p class="details">I was born in Columbia, SC and raised in Kings Mountain. I enjoy assembling computer hardware setups. My experience with web design and development started during my senior year of high school through a community college program where I learned baseline markup, syntax layouts, and basic CSS styling mechanics.</p>
+    </section>
+
+    <section id="learning">
+      <h3>What I Hope to Learn From This Course</h3>
+      <button class="detail-toggle" type="button">Hide details</button>
+      <p class="details">I hope to get better with designing web layouts.</p>
+    </section>
+
+    <section id="future">
+      <h3>My Future</h3>
+      <button class="detail-toggle" type="button">Hide details</button>
+      <p class="details">In the future, I plan to leverage this web development and infrastructure design knowledge to build custom decentralized software applications, automated personal dashboard interfaces, and systems architecture frameworks for both personal platforms and commercial tech clients.</p>
+    </section>
+
+    <section>
+      <h3>My Interests</h3>
+      <p>These interests connect my background with what I want to build in the future. Choose a topic to see the related interests.</p>
+      <div class="filters">
+        <button type="button" data-filter="all" class="selected">All</button>
+        <button type="button" data-filter="hardware">Hardware</button>
+        <button type="button" data-filter="web">Web Design</button>
+        <button type="button" data-filter="software">Software</button>
+      </div>
+      <ul>
+        <li class="interest hardware">Assembling computer hardware setups</li>
+        <li class="interest web">Designing web layouts with HTML and CSS</li>
+        <li class="interest software">Building automated personal dashboards</li>
+        <li class="interest software">Developing decentralized software applications</li>
+      </ul>
+    </section>
+
+    <a href="#top">Back to top</a>
+  </main>
+
+  
+</body>
+</html>
